@@ -1,5 +1,11 @@
 1. How to display images in title bar?
+Ans: 1) First create an image file with ". ico" extension ;
+     2) Upload the file to the main directory where all the website files are located.
+     3) After adding the ". ico" file into your website run the page. The browser will automatically select and display the image in the title.
+
 2. What is the purpose of "alt" attribute of img tag?
+Ans: The alt attribute is used to show alternate text if the image cannot be displayed.
+
 3. Create the following web pages using html tags:
 		a. Home Page
 		b. Employees Page
