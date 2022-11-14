@@ -1,0 +1,16 @@
+1. How to display images in title bar?
+2. What is the purpose of "alt" attribute of img tag?
+3. Create the following web pages using html tags:
+		a. Home Page
+		b. Employees Page
+		c.  Depts Page
+		d.  Contact Us Page
+		e.   About Us Page
+		
+Hints:
+		-->   Home page should provide hyperlinks to  all Other web pages
+		-->   Employees Page display employee details in table format. 
+					Columns:  Empno, Ename, Job, Sal, Deptno
+		-->  Dept names display using list tags : ol/ul
+		-->  Contact Page display contact details. Provide external hyperlinks to facebook, youtube, twitter, etc...
+		-->  About us page uses :  p tag, img tags
