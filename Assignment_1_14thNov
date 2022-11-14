@@ -9,3 +9,6 @@ Answer: 500 status code is "Internal Server Error". It is a code to inform that 
 
 4.   What is No-Sql Databases?
 Answer: No-Sql is non-relational database. It does not store data in a structred format or table format.
+
+5.   What is IIS?
+Answer: IIS stands for Internet Information Services. It is a webserver that is used to accept and respond to the requests made from client.
