@@ -12,3 +12,8 @@ Ans: To apply style to the first letter:
 		e.  All rows  ---   padding, border-bottom 
 		
 Hint : Check the reference Image 
+
+3. Why do we use  ~  and >  symbols in css selectors?
+Ans: 1)  + sign targets all selectors having same parent but the target is immediate sibling.
+     2) > selector selects the direct children’s of the particular element.
+     3)  ~ tilde symbol selects every element after the former selector. 
