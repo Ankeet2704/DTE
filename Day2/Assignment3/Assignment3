@@ -1,0 +1,14 @@
+1. How to apply style to first letter of the paragraph?
+Ans: To apply style to the first letter:
+      1) Put the first letter in the span tag.
+      2) Then apply the styles that you want in for the span tag.
+
+2. Create a web page to display students details apply the styles as per the following requirements:
+
+		a.  Header Row --  background color, color 
+		b.  All Even Rows  ---   background color, color 
+		c.  All Odd Rows  ---   background color, color 
+		d.  Hover  ---   Change backgroundColor
+		e.  All rows  ---   padding, border-bottom 
+		
+Hint : Check the reference Image 
