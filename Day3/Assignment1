@@ -8,3 +8,9 @@ Ans: 1) It ensures all expectations are met.
      2) It improves the reliability of the of the end-product.
      3) It helps to take corrective measures to avoid any mismatch between the expected and actual results.
      4) It saves load on the server - more work is done on the client side.
+
+3. What is querystring in URL?
+Ans: A query string is the portion of a URL where data is passed to a web application or back-end database. The query string is whatever follows the question mark sign ("?")
+
+4. What is <input type="hidden"  />  ? Why do we use?
+Ans: The <input type="hidden"> defines a hidden input field. A hidden field lets web developers include data that cannot be seen or modified by users when a form is submitted. A hidden field often stores what database record that needs to be updated when the form is submitted.
