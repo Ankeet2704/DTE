@@ -1,0 +1,10 @@
+1. What is Validation in Client Side Programming? 
+Ans: 1) The user input validation that takes place on the client side is called client-side validation. 
+     2) Scripting languages such as JavaScript and VBScript are used for client-side validation. 
+     3) In this kind of validation, all the user input validation is done in user’s browser only.
+
+2. What are the advantages of performing Validations?
+Ans: 1) It ensures all expectations are met.
+     2) It improves the reliability of the of the end-product.
+     3) It helps to take corrective measures to avoid any mismatch between the expected and actual results.
+     4) It saves load on the server - more work is done on the client side.
