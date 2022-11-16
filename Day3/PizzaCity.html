@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza City Order</title>
+  <style>
+    body{
+      margin: 0px;
+      background-image: url('wooden.jpg');
+    }
+
+    #welcome{
+      background-color: rgb(244, 185, 75);
+      margin-left: 28%;
+      padding: 5px;
+      text-align: center;
+      margin-top: 25px;
+      width: 550px;
+    }
+
+    #order-form{
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      padding: 5px;
+      margin-left: 28%;
+      margin-bottom: 0px;
+      width: 550px;
+      opacity: 85%;
+    }
+
+    #imp{
+      color: red;
+    }
+
+    #order-btn{
+      width: 560px;
+      font-size: 15px;
+      margin-left: 28%;
+      padding: 10px 0px ;
+      background-color: red;
+      color: white;
+      border: 0.1px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input{
+      padding: 5px 0px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="welcome">
+    <h2>WELCOME TO ITALIAN PIZZA!</h2>
+    <p>We deliver pizza in 40 minutes max. If not - Pizzas's on us!</p>
+  </div>
+  
+  <div id="order-form">
+    <form method="GET">
+      <br/>
+      <label>Email</label>
+      <br/>
+      <input type="text" id="email" name="email" />
+      <br/><br/>
+
+      <label>Phone</label>
+      <br/>
+      <input type="text" id="phone1" name="phone1" placeholder="Area"/>
+      <input type="text" id="phone2" name="phone2" placeholder="Local"/>
+      <input type="text" id="phone3" name="phone3" placeholder="Local"/>
+      <br/><br/>
+
+      <label>Number of Slices</label>
+      <br/>
+      <input type="text" id="slices" name="slices" />
+      <br/><br/>
+
+      <label>Pizza Size</label>
+      <br/>
+      <input type="radio" id="size1" name="size" value="8-inch" />
+      <label>8-inch</label>
+
+      <input type="radio" id="size2" name="size" value="10-inch" />
+      <label>10-inch</label>
+                
+      <input type="radio" id="size3" name="size" value="12-inch" />
+      <label>12-inch</label>
+
+      <input type="radio" id="size4" name="size" value="14-inch" />
+      <label>14-inch</label>
+      <br/><br/>
+
+
+      <label>Toppings</label>
+      <br/>
+      <input type="checkbox" id="topping1" name="topping1" value="Pepperoni " />
+      <label>Pepperoni</label>
+
+      <input type="checkbox" id="topping2" name="topping2" value="Onions " />
+      <label>Onions</label>
+
+      <input type="checkbox" id="topping3" name="topping3" value="Mushroom " />
+      <label>Mushroom</label>                
+      
+      <input type="checkbox" id="topping4" name="topping4" value="Sausage " />
+      <label>Sausage</label>
+      <br/><br/>
+
+      <label id="imp">*</label>
+      <input type="checkbox" id="terms" name="terms" value="Agree" />
+      <label>I agree to TERMS AND CONDITIONS</label>   
+      <br/><br/>       
+    </form>
+  </div>
+  <br/>
+  <button id="order-btn">Order Now</button>
+</body>
+</html>

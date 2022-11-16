@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Payemnt</title>
+  <style>
+    body{
+      margin: 0px;
+    }
+
+    #welcome{
+      background-color: rgb(127, 204, 230);
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-top: 1px solid black;
+      color: white;
+      font-weight: bold;
+      margin-left: 28%;
+      padding: 5px;
+      text-align: left;
+      margin-top: 25px;
+      width: 450px;
+    }
+
+    #order-form{
+      display: flex;
+      justify-content: left;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      background-color: white;
+      padding: 5px;
+      margin-left: 28%;
+      margin-bottom: 0px;
+      width: 450px;
+      height: 275px;
+      opacity: 85%;
+    }
+
+    #order-btn{
+      width: 250px;
+      font-size: 15px;
+      font-weight: bold;
+      margin-left: 36%;
+      padding: 10px 0px ;
+      background-color: orange;
+      color: white;
+      border: 0.1px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input{
+      padding: 5px 0px;
+    }
+
+    p{
+      background-color: lightgray;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      padding: 20px;
+      margin: 0px;
+      margin-left: 28%;
+      width: 420px;
+    }
+
+    #card-number{
+      width: 445px;
+    }
+
+    #cvv-number{
+      width: 50px;
+      height: 10px;
+    }
+
+    #card-name{
+      width: 445px;
+    }
+
+    #info{
+      font-size: 10px;
+    }
+
+    label{
+      color: rgb(127, 204, 230);
+      font-size: 18px;
+    }
+    
+    .flex{
+      margin: 0px;
+      display: flex;
+    }
+
+    .cvv-info{
+      font-size: 10px;
+      width: 125px;
+      margin-left: 2px;
+    }
+
+    #exp-date{
+      width: 50%;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div id="welcome">
+    <img src="lock.png" width="20px" height="20px">
+    <span>This is a secure 128-bit SSL Encrypted payment. You're safe.</span>
+  </div>
+  
+  <div id="order-form">
+    <form method="get">
+
+      <br/>
+      <input type="radio" id="payment1" name="payment" value="Credit Card" />
+      <label>Credit Card(Visa, Mastercard)</label>
+      <img src="creditcard.png" width="60px" height="25px">
+
+      <input type="radio" id="payment2" name="payment" value="Paypal" />
+      <label>Paypal</label>
+      <img src="paypal.png" width="50px" height="25px">
+
+      <br/><br/>
+      <label>Card Number</label>
+      <label id="info">The 16 digits on front of your card.</label>
+      <br/>
+      <input type="text" id="card-number" name="card-number" />
+      <br/><br/>
+
+      <div class="flex">
+        <div id="exp-date">
+          <label>Expiration Date </label> 
+          <br/>   
+          <select  id="month" name="month">
+              <option>Month</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+          </select>
+          <label>/</label>
+          <select id="year" name="year">
+            <option>Year</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+            <option>2011</option>
+          </select>
+        </div>
+
+        <div id="cvv">
+          <label>CVV </label> 
+          <br/>
+          <div class="flex">
+            <input type="text" id="cvv-number" name="cvv-number" />
+            <label class="cvv-info">The last 3 digits diplayed on the back of your card</label>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <label>Full Name on a Card</label>
+      <br/>
+      <input type="text" id="card-name" name="card-name" />
+      <br/><br/>
+
+    </form>
+  </div>
+
+  <p align="center">
+    You will be charged $29.00 every month
+  </p>
+  <br/>
+  <button id="order-btn">Complete Transaction</button>
+  
+</body>
+</html>
