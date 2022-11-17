@@ -1,0 +1,19 @@
+1. What is differences between <head> and  <header> tags?
+Ans: The head tag is used for holding Meta information, title, links, etc. and is not displayed on the page. 
+     The header tag is used within the body of the website and can be used multiple times if required, e.g. to determine the top of an article.
+
+2. How to allow only numbers in textbox?
+Ans: 1. Using <input type="number"> - The standard solution to restrict a user to enter only numeric values is to use <input> elements of type number. It has           built-in validation to reject non-numerical values. For example:
+        <label for="salary">Enter your salary:</label>
+        <input type="number" id="salary" name="salary">
+
+     2. Using pattern attribute - Alternatively, you can use the pattern attribute to specify a regular expression that should match the provided input. 
+        If the values contain non-digit characters, the element matches the :invalid CSS pseudo-classes. For example:
+        <label for="salary">Enter your salary:</label>
+        <input type="text" id="salary" name="salary" pattern="[0-9]+">
+
+     3. Using oninput event - Another solution is to use the oninput property to processes input events on the <input> elements. 
+        To restrict the user to enter only numeric values, you can do like:
+        <label for="salary">Enter your salary:</label>
+        <input type="text" id="salary" name="salary"
+        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
