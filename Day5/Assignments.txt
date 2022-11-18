@@ -1,1 +1,5 @@
-Hey
+1.  How to play youtube videos in HTML?
+
+2.  Implement the following using Canvas Tag in HTML5?
+		a.  Veritcal Graph   (similar to  Horizontal)
+
