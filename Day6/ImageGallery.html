@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+
+  <style>
+
+    #outer-div{
+      display: flex;
+      justify-content: center;
+    }
+
+    #inner-div{
+      column-count: 2;
+      column-gap: 5px;
+      width: 615px;
+      text-align: center;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    img{
+      border: 3px solid black;
+    }
+
+    #img1{
+      border-bottom-right-radius: 30px;
+    }
+
+    #img2{
+      border-top-right-radius: 30px;
+    }
+
+    #img3{
+      border-bottom-left-radius: 30px;
+    }
+
+    #img4{
+      border-top-left-radius: 30px;
+    }
+
+  </style>
+
+</head>
+<body>
+  <hr>
+  <div id="outer-div">
+    <div id="inner-div">
+      <div>
+        <img src="Img1.jpg" width="300px" height="300px" id="img1">
+        <img src="Img2.jpg" width="300px" height="300px" id="img2">
+        <img src="Img3.jpg" width="300px" height="300px" id="img3">
+        <img src="Img4.jpg" width="300px" height="300px" id="img4">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
