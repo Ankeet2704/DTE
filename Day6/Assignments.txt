@@ -5,3 +5,16 @@ Ans: Specifies the type of positioning method used for an element
 Ans: absolute - The element is positioned relative to its first positioned (not static) ancestor element
      relative - The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position 
  
+3. How to implement following requirements in CSS3 (As per the image):
+		a. Apply space between words
+		b. Apply space between letters
+		c. Apply shadow for each character in the text
+		d. Other requirements as per the image
+		
+4.  Create  a web page to prepare image gallery. Apply required CSS styles.
+
+5.  How to hide an element uisng CSS?
+Ans: 1) display: none
+     2) visibility: hidden;
+     3) Use scale (0) to shrink an element until it’s no longer visible. 
+     4) Apply translate (-999px, 0px) to shift an element off screen.
