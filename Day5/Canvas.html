@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Graph in Canvas</title>
+    <style>
+        canvas{
+            border:3px solid blue;
+            width: 500px;
+            height: 500px;
+        }
+
+
+    </style>    
+</head>
+<body>
+    <canvas id="can"></canvas>
+    <button onclick="main()">Click Me!</button>
+    <script>
+        function  main()
+			{
+			const  obj =  document.getElementById("can");
+			const  ctx   =  obj.getContext("2d");	
+			
+			const ar = [40, 20, 100, 90, 40, 135, 70];
+			let x = 10, y = 145, h = 30;
+			
+            for(var i = 0; i < 7; i++){
+				ctx.beginPath();
+				ctx.fillStyle = "Blue";
+				ctx.fillRect(x, y, h, -ar[i]);	
+				
+				x = x + 40;
+			}			
+		}
+    </script>
+</body>
+</html>
