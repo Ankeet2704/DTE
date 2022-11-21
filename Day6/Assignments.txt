@@ -1,2 +1,7 @@
-2.  Implement the following using Canvas Tag in HTML5?
-		a.  Veritcal Graph   (similar to  Horizontal)
+1. Why do we use Position in CSS?
+Ans: Specifies the type of positioning method used for an element
+
+2. Difference between property values Relative and Absolute in Position property-----
+Ans: absolute - The element is positioned relative to its first positioned (not static) ancestor element
+     relative - The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position 
+ 
