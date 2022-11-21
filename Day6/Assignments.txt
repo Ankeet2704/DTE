@@ -21,3 +21,9 @@ Ans: 1) display: none
      
 6.  Create web page to apply animation based on the position. Object should move from left to right.
 
+7.  Create a image gallery using flexbox for the below requirements:
+		
+		a. Each card should contain :  image and description
+		b. Cards should be arranged centred.
+		c.  Update the margins and width for mobile device using media queries.
+
