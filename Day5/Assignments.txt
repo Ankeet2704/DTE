@@ -1,4 +1,5 @@
 1.  How to play youtube videos in HTML?
+Ans: In the video tag, src should be set to the youtube link that you want to play.
 
 2.  Implement the following using Canvas Tag in HTML5?
 		a.  Veritcal Graph   (similar to  Horizontal)
