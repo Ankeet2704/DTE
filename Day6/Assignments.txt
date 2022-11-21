@@ -18,3 +18,6 @@ Ans: 1) display: none
      2) visibility: hidden;
      3) Use scale (0) to shrink an element until it’s no longer visible. 
      4) Apply translate (-999px, 0px) to shift an element off screen.
+     
+6.  Create web page to apply animation based on the position. Object should move from left to right.
+
