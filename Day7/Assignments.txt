@@ -2,3 +2,21 @@
 Ans: The viewport is the user's visible area of a web page.
      The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.
      <meta> tag is used to take control over the viewport. <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+2. Create a web page to display product details in tabel format   Apply the styles to table using bootstrap.  (Refer the Image).
+
+	a.  Apply Blue color to header row
+	b.  Apply Red color to rows that contains UnitsInStock - zero
+	c.  Remaining All rows are in green. 
+		
+3.  Create a Web Page to implement login form. 
+		a. Add required textbox.
+		b. Add two buttons. One is for Login, another one is for Reset.
+		c. Apply bootstrap styles to buttons. 
+		
+	
+4.   Create a web page to organize the content in four columns using Blueprint Framework Grid system.   (Refer the image).
+
+5.   Create a web page to provide UI for CRUD Operations. Apply styles using Foundation Framework (Buttons).   -- Refer the image 
+
+		a. mouse over on button:    Blue and White
