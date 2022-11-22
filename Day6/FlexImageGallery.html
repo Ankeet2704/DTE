@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Image Gallery</title>
+
+  <style>
+
+    body {
+      font-family: Arial;
+    }
+
+    .card{
+      margin: 5px;
+      width: 170px;
+      font-size: 20px;
+      padding: 0px;
+      border: 2px solid grey;
+      border-radius: 20px;
+      text-align: center;
+      flex: 20%;
+    }
+
+    .flex-gallery{
+      border: 2px solid black;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 800px) {
+    .flex-gallery {
+      background-color: blue;
+      justify-content: center;
+      flex: 50%;
+      max-width: 50%;
+    }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="flex-gallery">
+
+    <div class="card"> 
+      <img src="skmei.jpg" width="150px" height="150px"> 
+      <br>
+      <hr>
+      <span>Skmei Military</span>
+    </div>
+
+    <div class="card"> 
+      <img src="casado.jpg" width="150px" height="150px"> 
+      <br>
+      <hr>
+      <span>Casado 209-BLUE</span>
+    </div>
+
+    <div class="card"> 
+      <img src="SkmeiBlue.jpg" width="150px" height="150px"> 
+      <br>
+      <hr>
+      <span>Skmei 1155BLUE</span>
+    </div>
+
+    <div class="card"> 
+      <img src="fogg.jpg" width="150px" height="150px"> 
+      <br>
+      <hr>
+      <span>Fogg 2038-BL</span>
+    </div>
+
+    <div class="card"> 
+      <img src="curren.jpeg" width="150px" height="150px">
+      <br>
+      <hr>
+      <span>Curren 8152</span>
+    </div>
+
+    <div class="card"> 
+      <img src="lois.jpg" width="110px" height="150px">
+      <br>
+      <hr>
+      <span>Lois Caron 8049</span> 
+    </div>
+
+    <div class="card"> 
+      <img src="swisseagle.jpg" width="150px" height="150px">
+      <br>
+      <hr> 
+      <span>Swiss Eagle</span>
+    </div>
+
+
+  </div>
+</body>
+</html>
