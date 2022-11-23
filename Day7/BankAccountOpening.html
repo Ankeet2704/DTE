@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Bank Account Opening Form</title>
+
+  <style>
+
+    h1{
+      text-align: center;
+    }
+
+    form{
+      margin: 10px;
+      width: 900px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: justify;
+      border: 2px solid black;
+    }
+
+    input, textarea, select, .check{
+      margin: 5px;
+    }
+
+    label{
+      margin: 8px;
+      font-weight: bold;
+    }
+
+    span{
+      width: 150px;
+    }
+    
+    #flexcon{
+      display: flex;
+      justify-content: center;
+    }
+
+    form div{
+      text-align: left;
+    }
+
+    button{
+      margin: 10px;
+    }
+
+    #payment1 #payment2{
+      width: 50px;
+    }
+
+    .important{
+      color: red; 
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bank Account Opening Form</h1>
+  </header>
+
+  <hr>
+  <div id="flexcon">
+    <form action="" method="get">
+      <br/>
+
+      <br/><br/>
+      <label class="form-label">Name on Account<span class="important">*</span></label>
+      <input type="text" class="form-control" placeholder="First Name" name="f-name" required/>
+      <input type="text" class="form-control" placeholder="Middle Name" name="m-name" required/>
+      <input type="text" class="form-control" placeholder="Last Name" name="l-name" required/>
+
+      <br>
+      <label>Account Number<span class="important">*</span></label>
+      <input type="number" class="form-control" placeholder="Enter Password" name="acc-number" required autofocus/>
+      <br/>
+
+      <label class="form-label">Account Type</label>
+      <div>
+        <input type="radio" id="payment1" name="payment" value="Current" />
+        <span>Current Account</span>
+      </div>
+      <div>
+        <input type="radio" id="payment2" name="payment" value="Savings"/>
+        <Span>Savings Account</Span>
+      </div>
+
+      <br>
+      <label class="form-label">Address<span class="important">*</span></label>
+      <textarea rows="4" type="text" class="form-control" placeholder="Please Enter Full Address" name="address" required></textarea>
+      <input type="text" class="form-control" placeholder="City" name="city" required/>
+      <input type="text" class="form-control" placeholder="State" name="state" required/>
+      <input type="number" class="form-control" placeholder="Pincode" name="pincode" required pattern="[0-9]{6}"/>
+      <br/>
+
+      <label class="form-label">Occupation </label>   
+      <select class="form-control" id="Occupation" name="occupation">
+        <option>Public Sector</option>
+        <option>Private Sector</option>
+        <option>Goverment</option>
+        <option>Student</option>
+      </select>
+      <br>
+
+      <label class="form-label">Phone Number<span class="important">*</span> </label>   
+      <select class="form-control" id="phone" name="phone" required>
+        <option>Home</option>
+        <option>Office</option>
+        <option>Telephone</option>
+        <option>Mobile</option>
+        <option>Other</option>
+      </select>
+      <input type="text" class="form-control" placeholder="Enter Mobile Number" name="phone-number" required/>
+      <br>
+
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary ">Submit</button>
+      </div>
+
+      <div class="check">
+        <input type="checkbox" name="agree">
+        <span>I agree to terms and conditions.<span class="important">*</span></span>
+      </div>
+
+      
+    </form>
+  </div>  
+
+</body>
+</html>
