@@ -1,10 +1,17 @@
 1. Find out the details about List attribute in html5 forms. How to use datalist tag? Prepare an example for list attribute and datalist tag?
+Ans: The list attribute in HTML is used to identify a list of pre-defined options for an <input> element to suggest the user.
+     <input list="name"> here, name is a string that will work as id and will be used to link the <input> element with the <datalist> element.
+     datalist_id: It is used to specify the Id of the datalist that will used to make a link up with the input element.
 
 2. What are  Web Crawlers in SEO? 
+Ans: A web crawler is a bot that search engines like Google use to automatically read and understand web pages on the internet.
+     To find the most reliable and relevant information, a bot will scan billions of web pages. It will search (or crawl) these pages for data on each page and      then follow the links mentioned in them to other pages. Then it will do the same thing all over again.
+     Web crawlers look for information in each page's HTML code to understand the purpose of a page. And they will read the content of the page to learn what        it's about. 
 
 3. Why do you use backlinks in SEO?
+Ans: A backlink is a link created when one website links to another. Backlinks are important to SEO since more backlinks to a website are a signal that others 	      support the content
 
-3. Create a web page to apply microdata for the following item:
+4. Create a web page to apply microdata for the following item:
 
 		a.  Logo
 		b.  Url
@@ -13,5 +20,5 @@
 		e.   Movie
 		f.   Recipe
 		g.  Restaurant
-		
-4.   Create a web page to for movie reviews page. Provide required metadata using Meta tags.   
+
+5.   Create a web page to for movie reviews page. Provide required metadata using Meta tags.   
