@@ -1,0 +1,17 @@
+1. Find out the details about List attribute in html5 forms. How to use datalist tag? Prepare an example for list attribute and datalist tag?
+
+2. What are  Web Crawlers in SEO? 
+
+3. Why do you use backlinks in SEO?
+
+3. Create a web page to apply microdata for the following item:
+
+		a.  Logo
+		b.  Url
+		c.   Person
+		d.   Place
+		e.   Movie
+		f.   Recipe
+		g.  Restaurant
+		
+4.   Create a web page to for movie reviews page. Provide required metadata using Meta tags.   
