@@ -1,0 +1,17 @@
+1.  Create a web page to process customer data using local storage.
+	
+		a.  Read the following details from the user
+					1.   Customer Name
+					2.   Joined Date
+					3.   Favourite Color
+
+	Hint:  Use Forms 2.0 controls suitable for the above requirement
+					
+					
+2.   Create another page to display customer details
+
+	a.  Apply page background color when page is opened
+	b.  Display Welcome message based on the user name in heading
+	c.   Display Joined Date -- details in the paragraph. 
+		 
+Hint:  If data does not exists,  background color  white /  welcome to Guest user / Date is empty
