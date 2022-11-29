@@ -6,3 +6,7 @@ Ans: Visually hide an element while still allowing it to be exposed to assistive
      Use .visually-hidden-focusable to visually hide an element by default, but to display it when it’s focused (e.g. by a keyboard-only user). 
      .visually-hidden-focusable can also be applied to a container–thanks to :focus-within, the container will be displayed when any child element 
      of the container receives focus.
+     
+3. What is spinner class? How to create spinners in bootstrap?
+Ans: They indicate the loading state of a component or page.
+     It is made using only html, css and no JavaScript. Use class "spinner-border" to get the spinner.
