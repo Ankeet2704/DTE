@@ -1,0 +1,46 @@
+
+$height: 40rem;
+$square: 25rem;
+$circle: 50%;
+
+@mixin img-design($shadowcolor: blue, $imgShape: "rectangle")
+{
+
+    @if($imgShape == "rectangle"){
+        box-shadow: 5px 5px 10px $shadowcolor;
+        height: $height;
+        width: $square;
+    }
+
+    @if($imgShape == "square"){
+        box-shadow: 10px 10px 20px $shadowcolor;
+        height: $square;
+        width: $square;
+    }
+    
+    @else if($imgShape == "circle"){
+        box-shadow: 20px 20px 30px $shadowcolor;
+        border-radius: $circle;
+    }
+}
+
+
+img{
+    @include img-design($shadowcolor: red, $imgShape: "circle");
+}
+
+@for $i from 1 to 7
+{
+  .ts-#{$i}
+  {
+    font-size :  $i + 10px; 
+      @if( $i <= 3)
+      {
+        color: green;
+      }
+      @else
+      {
+        color: red;
+      }  
+    }
+}
