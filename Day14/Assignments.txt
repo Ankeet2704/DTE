@@ -3,3 +3,8 @@ Ans: 1) Containers are a fundamental building block of Bootstrap that contain, p
      2) Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Containers are used to contain, pad, and          (sometimes) center the content within them. While containers can be nested, most layouts do not require a nested container.
      3) Our default .container class is a responsive, fixed-width container, meaning its max-width changes at each breakpoint.
      4) Use .container-fluid for a full width container, spanning the entire width of the viewport.
+
+2. What is CDN? What are the advantages of CDN Urls?
+Ans: 1) Bootstrap CDN links provided us several HTML components, CSS grid system, responsive ready-made media queries that build responsive first mobile-            friendly designs. By using the Bootstrap we can use pre-made bootstrap classes and attributes to add the CSS style and JavaScript effects.
+     2) Bootstrap CDN is the distribution of the most popular CSS framework in the world using a content delivery network. It is a geographically distributed        group of servers that work together to provide fast delivery of Internet content.
+     3) CDN enables a quick way to serve files over the internet such as HTML, Javascript, CSS, images, and videos. In Bootstrap’s case, the main Bootstrap          javascript and stylesheet files are being served over a CDN network.
