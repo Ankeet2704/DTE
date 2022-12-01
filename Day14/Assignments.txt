@@ -1,3 +1,5 @@
 1. What is container class in Bootstrap? When do we use container-fluid class?
-Ans: Our default .container class is a responsive, fixed-width container, meaning its max-width changes at each breakpoint.
-     Use .container-fluid for a full width container, spanning the entire width of the viewport.
+Ans: 1) Containers are a fundamental building block of Bootstrap that contain, pad, and align your content within a given device or viewport.
+     2) Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Containers are used to contain, pad, and          (sometimes) center the content within them. While containers can be nested, most layouts do not require a nested container.
+     3) Our default .container class is a responsive, fixed-width container, meaning its max-width changes at each breakpoint.
+     4) Use .container-fluid for a full width container, spanning the entire width of the viewport.
