@@ -1,0 +1,3 @@
+1. What is container class in Bootstrap? When do we use container-fluid class?
+Ans: Our default .container class is a responsive, fixed-width container, meaning its max-width changes at each breakpoint.
+     Use .container-fluid for a full width container, spanning the entire width of the viewport.
