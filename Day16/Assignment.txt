@@ -1,0 +1,23 @@
+1. What are the different activities that we do using JavaScript in client side programming?
+Ans: 1. Client-side validation.
+     2. Displaying date and time.
+     3. To validate the user input before submission of the form.
+     4. Open and close new windows.
+     5. To display dialog boxes and pop-up windows.
+     6. To change the appearance of HTML documents.
+
+2. What is JavaScript engine for Safari?
+Ans: JavaScriptCore is the js engine used in Safari browser.
+
+3.  Test the following requirement using JavaScript
+
+		a.  Create two separate *.js files (Names :  ClientScripts1.js, ClientScripts2.js)
+		b.  Write some messages using alert() .  Message should contains the file name
+		c.   Import the above js files in other *.html document and observe.
+		
+4.   Do some changes and observe	
+		a.  Give some wrong file name while import and observe the messages in console window
+    Ans: Failed to load resource: the server responded with a status of 404 (Not Found)
+    
+		b.  Is  Filename case sensitive check practically?
+    Ans: No, the filenames are case insensitive.
