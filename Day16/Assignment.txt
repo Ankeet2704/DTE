@@ -21,3 +21,19 @@ Ans: JavaScriptCore is the js engine used in Safari browser.
     
 		b.  Is  Filename case sensitive check practically?
     Ans: No, the filenames are case insensitive.
+
+5. Is it possible to disable JavaScript in browser?  If yes, How to disable javascript in browser?
+Ans: Yes, it is possible to disable Javascript in browser. Press Control+Shift+P or Command+Shift+P (Mac) to open the Command Menu. Start typing javascript , select Disable JavaScript, and then press Enter to run the command.
+
+6. What is the difference between undefined and not defined in JavaScript?
+Ans: An "undefined" indicates that a variable has been declared but not given a value, while "not defined" indicates that a variable does not exist.
+
+7. Difference between ==  and ===?
+Ans: The main difference between the == and === operator in javascript is that the == operator does the type conversion of the operands before comparison, whereas the === operator compares the values as well as the data types of the operands.
+
+8. What does the isNaN() function?
+Ans: The isNaN() function determines whether a value is NaN.
+
+9. Difference between Client side JavaScript and Server side JavaScript?
+Ans: Client-side javascript allows you to make possible some user interactions, by for instance changing the    DOM, adding events to html elements, etc..
+Server side javascript, allows to exploit the javascript in its entireness by building more scalable, event-driven and non I/O blocking applications.
