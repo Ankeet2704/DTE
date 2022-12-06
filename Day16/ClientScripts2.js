@@ -1,0 +1,1 @@
+alert("This is from CS2 ClientScripts2.js")
