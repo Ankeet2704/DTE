@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology Table</title>
+
+  <style>
+
+    table{
+      border-spacing: 0px;
+    }
+
+    table tr, table td{
+      margin: 5px;
+    }
+
+    table th{
+      background-color: lightblue;
+      margin: 0px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 align="center">Operations on arrays</h1>
+  </header>
+  <hr/>
+
+  <div>
+    <input type="button" value="Show Data" onclick="fn_showtable()">
+
+    <table id="tech_table">
+      <tr>
+        <th>Course</th>
+        <th>Course</th>
+        <th>Course</th>
+        <th>Course</th>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+
+    var tableObj = document.getElementById("tech_table");
+
+    var techArray = ["HTML5", "CSS3", "jQuery", "Angular JS", "Bootstrap"];
+    var tech_data = "";
+
+    function fn_showtable(){
+
+      tableObj.style.border = "2px solid black";
+      tableObj.style.margin = "10px";
+      tableObj.style.borderSpacing = "0px";
+
+      for(let i = 0; i < 15;  i++){			
+                if(i%4==0){
+                    tech_data += "<tr>"
+                }		      
+                     
+                tech_data += "<td>"	 +  techArray[i%5] +  "</td>";	
+                
+                if(i%4==3){
+                    tech_data += "</tr>"
+                }
+            }
+				tableObj.innerHTML += tech_data;
+    }
+  </script>
+
+</body>
+</html>

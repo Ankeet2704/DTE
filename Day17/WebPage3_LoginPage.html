@@ -1,0 +1,46 @@
+<html>
+	<head></head>
+	<body>
+		<h3>JavaScript Programming -- DOM </h3>
+		<hr/>
+		
+		<fieldset>
+		<legend>User Login</legend>
+		
+		User Name  :  <input type="text"  id="t1"   />
+		<br/><br/>
+		
+		Password  :  <input type="password"  id="t2"   />
+		<br/><br/>
+		
+		
+		<input  type="button"  value="Login"  onclick="fn_getMessage()"  />
+		<p  id="p1"></p>
+		 </fieldset>		
+		<script>		
+				function  fn_getMessage()
+				{
+					var  paraObj  =  document.getElementById("p1");		
+					var  txtObj1  =  document.getElementById("t1");	
+					var  txtObj2  =  document.getElementById("t2");	
+					
+					var uid = txtObj1.value;
+					var pwd = txtObj2.value;
+					
+					if(uid == "admin" && pwd == "admin123")
+					{
+						paraObj.innerHTML = "Welcome to " +  txtObj1.value;
+						paraObj.style.color="green";
+					}
+					else
+					{
+						paraObj.innerHTML = "Invalid user id or password";
+						paraObj.style.color="red";
+					}	 
+ 
+					
+				}		
+		</script>
+		 
+	</body>
+</html>

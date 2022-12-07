@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Loops</title>
+</head>
+<body>
+  <header>
+    <h1>Javascript Programming Loops</h1>
+  </header>
+  <hr>
+
+  <div>
+    <ul id="list1">
+    </ul>
+
+    <input type="button" value="While" onclick="fn_while()"/>
+    <input type="button" value="Do While" onclick="fn_dowhile()"/>
+    <input type="button" value="For" onclick="fn_for()"/>
+  </div>
+
+  <script>
+
+    var listObj = document.getElementById("list1");
+    
+    function fn_while(){
+      var x=0;
+      listObj.innerHTML="";
+      while(x<=10){
+        if(x%2==0){
+          listObj.innerHTML += "<li style =\"color:blue\""+ ">Welcome to JavaScript -" + x + "</li>";
+        }
+        else{
+          listObj.innerHTML += "<li style =\"color:green\""+ ">Welcome to JavaScript -" + x + "</li>";
+        }
+        x++;
+      }
+    }
+
+    function fn_dowhile(){
+      var x=0;
+
+      
+
+      listObj.innerHTML="";
+      do{
+        x++;
+        if(x%2==0){
+          listObj.innerHTML += "<li style =\"color:blue\""+ ">Welcome to JavaScript -" + x + "</li>";
+        }
+        else{
+          listObj.innerHTML += "<li style =\"color:green\""+ ">Welcome to JavaScript -" + x + "</li>";
+        }
+      }while(x<=10)
+    }
+
+    function fn_for(){
+      listObj.innerHTML="";
+      for(x=0; x<=12; x++){
+        if(x%2==0){
+          listObj.innerHTML += "<li style =\"color:blue\""+ ">Welcome to JavaScript -" + x + "</li>";
+        }
+        else{
+          listObj.innerHTML += "<li style =\"color:green\""+ ">Welcome to JavaScript -" + x + "</li>";
+        }
+      }
+    }
+
+  </script>
+</body>
+</html>

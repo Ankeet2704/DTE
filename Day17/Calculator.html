@@ -1,0 +1,51 @@
+<html>
+	<head></head>
+	<body>
+		<h3>Mathematical Operations </h3>
+		<hr/>
+		
+		<form action="" method="get">
+      <fieldset>
+        <legend>Calculate</legend>
+        
+        <br>
+        First Number :  <input type="number"  id="t1"   />
+        <br/><br/>
+        
+        Second Number :  <input type="number"  id="t2"   />
+        <br/><br/>
+        
+        <input  type="button"  value="Add"  onclick="fn_add()"  />
+        <input  type="button"  value="Subtract"  onclick="fn_subtract()"  />
+        <input  type="button"  value="Multiply"  onclick="fn_multiply()"  />
+        <p  id="p1"></p>
+      </fieldset>
+    </form>		
+
+		<script>
+      var  paraObj  =  document.getElementById("p1");		
+			var  txtObj1  =  document.getElementById("t1");	
+			var  txtObj2  =  document.getElementById("t2");	
+
+			function  fn_add()
+			{
+        var total = parseInt(txtObj1.value) + parseInt(txtObj2.value);
+        paraObj.innerHTML = "Result: " +  total;
+      }
+
+      function  fn_subtract()
+			{ 
+        var total = parseInt(txtObj1.value) - parseInt(txtObj2.value);
+        paraObj.innerHTML = "Result: " +  total;
+      }
+
+      function  fn_multiply()
+			{
+        var total = parseInt(txtObj1.value) * parseInt(txtObj2.value);
+        paraObj.innerHTML = "Result: " +  total;
+      }
+
+		</script>
+		 
+	</body>
+</html>
