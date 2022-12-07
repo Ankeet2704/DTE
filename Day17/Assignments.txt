@@ -1,0 +1,55 @@
+1. What are the types of Pop up boxes available in JavaScript ?  Find some more details about pop-boxes?
+Answer: --> JavaScript has three kind of popup boxes: 
+              1. Alert box, 
+              2. Confirm box, and 
+              3. Prompt box.
+             
+       ==> Alert Box: An alert box is often used if you want to make sure information comes through to the user.
+                      When an alert box pops up, the user will have to click "OK" to proceed.
+                      
+                      window.alert("sometext");Nigara fall
+                      
+       ==> Confirm Box: A confirm box is often used if you want the user to verify or accept something.
+                        When a confirm box pops up, the user will have to click either "OK" or "Cancel" to proceed.
+                        If the user clicks "OK", the box returns true. If the user clicks "Cancel", the box returns false.
+                        
+                        Example: window.confirm("sometext"); 
+                        
+       ==> Prompt Box: A prompt box is often used if you want the user to input a value before entering a page.
+                       When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value.
+                       If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns null.
+                       
+                        Example: window.prompt("sometext","defaultText"); 
+                        
+2.  Update the login example to apply styles to result message. 
+		a.  Welcome message display in Green color
+		b.  Invalid message display in Red color
+		
+	Hint : Apply styles to html tags using javascript
+
+3.   Create a web page to process product details using JavaScript.  Calculate total amount based on the given values.  (Refer the Image)
+
+4.   Create a web page to perform all math operations (Add, Sub, Multiply) using JavaScript. (Refer the Image)
+
+
+5.  Create a web page to display the following messages  in list format  :
+		Welcome to JavaScript - 1
+		Welcome to JavaScript - 2
+		Welcome to JavaScript - 3
+		.....
+		Welcome to JavaScript - 3
+		
+		Hint : Generate the output in <ul> tag.  Try with all loops.  Refer the image for sample output.
+		
+6.  Update the above example to apply alternate items different colors using javascript
+		Colors  :		Blue / Green
+		
+		
+7.  	Create a web page to display technology names in the table format (Refer the Image: Assignment-7).
+
+		a. By default table should be empty
+		b. Show the data on button click
+		
+8.  	Create a web page to display technology names in the table format (Refer the Image: Assignment-8).
+			a.  Each row should  four items
+			b.  Next items should repeat in next row	
