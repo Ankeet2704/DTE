@@ -1,0 +1,6 @@
+1. What is BOM? Difference between DOM and BOM?
+Ans: BOM is a Browser Object Model, which is a window object supported by all browsers representing a browser window consisting of navigator, history, screen,        location and document objects which are children of windows. BOM can function to check an event from windows with window.addEventListener and can perform        manipulation using window.innerHeight and window.innerWidth.
+
+     The DOM is the Document Object Model, which deals with the document, the HTML elements themselves, e.g. document and all traversal you would do in it,          events, etc.
+     The BOM is the Browser Object Model, which deals with browser components aside from the document, like history, location, navigator and screen (as well as      some others that vary by browser).
+
