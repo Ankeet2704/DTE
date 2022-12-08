@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<style>
+				.error
+				{
+						color : red; 
+				}
+		</style>
+	</head>
+	<body>
+		<h3>JavaScript Programming -- Form Validations </h3>
+		<hr/>
+		
+		 
+			<form   id="form1"   name="form1"  onsubmit="fn_submitData()"   
+						  action=""   method="get">			
+			
+					Customer Name :  <input  type="text"  id="Cname" name="Cname"  onblur="fn_validateCname()"  autofocus   />  
+					 <span class="error">*</span>
+					<span id="sp1" class="error"></span>
+					<br/><br/>
+			
+					Source :  <input type="text"  id="source" name="source"  />    					
+					<br/><br/>
+			
+					Destination :  <input type="text"  id="destination" name="destination"  />      
+					<span id="sp2" class="error"></span>
+					<br/><br/>
+
+					Contact Number :  <input  type="number"  id="num" name="num"/>  
+					 <span class="error">*</span>
+					<span id="sp3" class="error"></span>
+					<br/><br/>
+
+					Email :  <input  type="text"  id="mail" name="mail" />  
+					 <span class="error">*</span>
+					<span id="sp4" class="error"></span>
+					<br/><br/>
+					
+					<input  type="submit"  value="Submit"  />		
+	</form>
+		
+ 
+	 
+		
+		<script> 	 
+			  function fn_submitData()
+			  {
+					// <!-- alert( document.getElementById("form1").name); -->
+					// <!-- alert( document.forms[0].name); -->
+					// <!-- alert( document.forms["form1"].name); -->
+						
+						var isFormValid = true;
+					
+						var nameTxtObj  =  document.getElementById("Cname"); 		
+				
+						var nameSpanObj  =  document.getElementById("sp1"); 	
+						var destSpanObj  =  document.getElementById("sp2"); 	
+						
+						nameSpanObj.innerHTML = "";
+						destSpanObj.innerHTML = "";
+
+						var sourceTxtObj  =  document.getElementById("source"); 		
+						var destTxtObj  =  document.getElementById("destination"); 
+						
+						var contactTxtObj = document.getElementById("num");
+						var mailTxtObj = document.getElementById("mail")
+						var contactSpanObj  =  document.getElementById("sp3"); 	
+						var mailSpanObj  =  document.getElementById("sp4");
+
+						var contact = contactTxtObj.value;
+						var nolength = contact.length;
+						
+						// Required
+						if( nameTxtObj.value ==  "" )
+						{					 
+							nameSpanObj.innerHTML = "Customer Name should not be empty";							
+							// stop the submit operations
+								isFormValid =  false;
+						}
+						 
+						// Compare 
+						if( sourceTxtObj.value ==  destTxtObj.value  )
+						{
+							destSpanObj.innerHTML = "Source and Destination should not be same";							
+							// stop the submit operations
+							isFormValid =  false;
+						} 
+
+						// Required
+						if( mailTxtObj.value == ""){
+								mailSpanObj.innerHTML = "Email should not be empty";
+								isFormValid = false;
+						}
+
+						//Required
+						if(contactTxtObj.value == ""){
+								contactSpanObj.innerHTML = "Contact should not be empty";
+								isFormValid = false;
+						}
+
+						if(nolength<=9 || nolength>10){
+								contactSpanObj.innerHTML = "Contact should contain 10 digits";
+								isFormValid = false;
+						}
+						
+						
+						if(isFormValid == false)
+						{
+							event.preventDefault();
+						}						
+			 }			  
+			 
+			 function  fn_validateCname()
+			 {
+					var nameTxtObj  =  document.getElementById("Cname"); 	
+					var nameSpanObj  =  document.getElementById("sp1"); 
+					
+					nameSpanObj.innerHTML = "";
+					
+					if( nameTxtObj.value ==  "" )
+						{					 
+							nameSpanObj.innerHTML = "User id should not be empty";	 
+						}					 
+			 }
+		</script>
+		
+	 
+		
+	</body>
+</html>

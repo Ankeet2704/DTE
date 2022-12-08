@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+    <h1>Product Category</h1>
+    <hr>
+
+    <select onchange="showProducts()">
+        <option>Select Category</option>
+        <option>Laptops</option>
+        <option>Mobile Phones</option>
+        <option>Sound Systems</option>
+    </select>
+
+    <ol id="olist">
+
+    </ol>
+
+    <script>
+        var listObj = document.getElementById("olist");
+
+        var laptops = ["Dell", "Asus", "HP", "Lenovo"];
+        var mobiles = ["Samsung", "Apple", "OnePlus" ,"Redmi", "Vivo"];
+        var sounds = ["Sony", "Samsung", "JBL", "Boat", "Bose"];
+
+        function showProducts()
+        {   
+           
+            switch(event.target.value)
+            {
+              case "Laptops":
+                listObj.innerHTML="";
+                for(i=0; i<laptops.length; i++)
+                {
+                  listObj.innerHTML += "<li>" + laptops[i] + "</li>";
+                }
+                break;
+
+              case "Mobile Phones":
+                listObj.innerHTML="";
+                for(i=0; i<mobiles.length; i++)
+                {
+                  listObj.innerHTML += "<li>" + mobiles[i] + "</li>";
+                }
+                break;
+
+              case "Sound Systems":
+                listObj.innerHTML="";
+                for(i=0; i<sounds.length; i++)
+                {
+                  listObj.innerHTML += "<li>" + sounds[i] + "</li>";
+                }
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
