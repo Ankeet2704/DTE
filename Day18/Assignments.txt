@@ -6,3 +6,31 @@ Ans: BOM is a Browser Object Model, which is a window object supported by all br
 
 2. What is event target property in javascript?
 Ans: The target event property returns the element that triggered the event. The target property gets the element on which the event originally occurred,            opposed to the currentTarget property, which always refers to the element whose event listener triggered the event.
+
+3. Update the previous example (WebPage5_Arrays_Dynamic.html)  to implement the following requirements:
+
+	a. It does not allow to add duplicates. If you try to add it should show message. 
+	b. If the given item is not exists, you need to show the message while removing the item. 
+	
+4.  Update the yesterday example (	all math operations -- assignment4) using single function for all operations.  Use target property to implement this. 	
+
+5.  Create a web page to display products based on the selected category.
+
+		a. Drop-down should show list of categories :   Laptops, Mobile Phones, Sound Systems etc...
+		b. Take 3 spearate arrays to store the products
+		c.  Based on the selected category you have to get items from the corresponding array and   load the items in list format. 
+
+
+6.  Create a web page to perform validations using javascript forms.
+
+		a.   Customer Name :    Required
+		b.   Source Station   
+		c.   Destination Station  :  Source station & destination should not be same
+		d.   Contact Number  :  Required,  should have 10 digits
+		e.    E-mail   :  Required
+		
+		(Hint :  Do not use HTML5 attributes )
+		
+		
+7.   What is difference between  indexOf()  and findIndex()
+Ans: findIndex - Returns the index of the first element in the array where predicate is true, and -1 otherwise. indexOf - Returns the index of the first          occurrence of a value in an array.
