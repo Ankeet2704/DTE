@@ -4,3 +4,8 @@ Ans: Regualr expression is a sequence of character which define a specific patte
      They can be patterns or combination of alphabets(a,b..z) ,numbers(0,1…9), special character     ( |, (),^, ), Quantifiers(*, +, ?), wildcards(.) character      set[], character ranges[start ,end].
      
      Email address validation through regular expression - /^w+[+.w-]*@([w-]+.)*w+[w-]*.([a-z]{2,4}|d+)$/i
+
+2.  What is map() method in Array?   How to use map() method?
+Ans: The map() method creates a new array populated with the results of calling a provided function on every element in the calling array. 
+     Example: const map1 = array1.map(x => x+2);
+     Here map1 is the new array created using array1 where every element will be incremented by 2.
