@@ -4,6 +4,9 @@ Ans: The addEventListener() method attaches an event handler to the specified el
      You can add many event handlers to one element.
 
 2.  How to use keypress, keyup, keydown events?
-Ans:
+Ans: There are three different keyboard events in JavaScript:
+     keydown: Keydown happens when the key is pressed down, and auto repeats if the key is pressed down for long.
+     keypress: This event is fired when an alphabetic, numeric, or punctuation key is pressed down.(Some browsers no longer support keypress event)
+     keyup: Keyup happens when the key is released.
 
 3.  Create a web page to read empno, ename, job, salary from the user (use input boxes). Add the details to table by insert a new row with textbox values.
