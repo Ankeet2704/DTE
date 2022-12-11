@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Table</title>
+
+  <style>
+
+    body{
+      text-align: center;
+    }
+
+    h1{
+      color: blue;
+    }
+
+    .tableDiv{
+      display: flex;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Employee Table</h1>
+  <hr>
+
+  <br><br>
+  Employee No. : <input type="number" id="empno" name="empno" autofocus/>   
+	<br/><br/>
+			
+	Employee Name : <input type="text" id="empname" name="empname"/>    					
+	<br/><br/>
+			
+	Job : <input type="text" id="job" name="job"/>      
+	<br/><br/>
+
+	Salary : <input type="number" id="sal" name="sal"/>  
+	<br/><br/>
+
+  <input type="button" onclick="fn_addrow()" value="Add Data">
+  <br/><br/>
+  <hr>
+  <br>
+
+  <div class="tableDiv">
+    <table id="empdata" border="2" width="75%" cellpadding="10" cellspacing="0">
+      <tr>
+        <th>Employee No.</th>
+        <th>Employee Name</th>
+        <th>Job</th>
+        <th>Salary</th>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+
+    function fn_addrow(){
+
+      var empnumber = document.getElementById("empno").value;
+      var empname = document.getElementById("empname").value;
+      var empjob = document.getElementById("job").value;
+      var salary = document.getElementById("sal").value;
+
+      var tableObj = document.getElementById("empdata");
+
+      var row = tableObj.insertRow(-1);
+      
+      var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			var cell3 = row.insertCell(2);
+      var cell4 = row.insertCell(3);
+
+			cell1.innerHTML = empnumber;
+			cell2.innerHTML = empname;
+			cell3.innerHTML = empjob;
+      cell4.innerHTML = salary;
+    }
+  </script>
+
+</body>
+</html>
