@@ -1,4 +1,4 @@
-1) Array methods in JavaScript Find(), FindIndex() and Filter()
+1. Array methods in JavaScript Find(), FindIndex() and Filter()
 Ans: Find(): The arr.find() method in Javascript is used to get the value of the first element in the array that satisfies the provided condition. It checks      all the elements of the array and whichever the first element satisfies the condition is going to print. This function will not work function having the        empty array elements, and also does not change the original array.
 
     FindIndex(): It returns the index of the first element that passes a test. If no match is found, it returns -1 value. It doesn't change the original array.     It doesn't execute the function for empty array elements.
@@ -6,3 +6,17 @@ Ans: Find(): The arr.find() method in Javascript is used to get the value of the
 
     Filter(): It creates a new array filled with elements that pass a test provided by a function. It does not execute the function for empty elements. It does     not change the original array.
 
+2. How to add / remove events dynamically without using event attributes (eg:  onclick, ...)
+Ans: The removeEventListener() method removes event handlers that have been attached with the addEventListener() method
+ 	
+3. Create a web page to implement the following requirements:
+		
+		a. Add two buttons  :  Find By Empno    Find By Job
+		b. Create an array to hold some employees data  (Employee objects)
+		c.  "Find By Empno" --- click 
+					---  Search based on the empno and display that details in table format
+					---  By default table should have only header row 
+		d.  "Find By Job" --- click 
+					---  Search based on the job and display that details in table format
+					---  By default table should have only header row 
+		e.  You can add textbox to read data from user.
