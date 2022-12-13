@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Finding Table</title>
+
+  <style>
+
+    body{
+      text-align: center;
+    }
+
+    h1{
+      color: blue;
+    }
+
+    .tableDiv{
+      display: flex;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Employee Table</h1>
+  <hr>
+
+  <br><br>
+  Find : <input type="text" id="empData" autofocus/>   
+	<br/><br/>
+			
+  <input type="button" onclick="fn_findData(event)" value="Find By Number">
+  <br/><br/>
+
+  <input type="button" onclick="fn_findData(event)" value="Find By Job">
+  <br/><br/>
+  <hr>
+  <br>
+
+  <div class="tableDiv">
+    <table id="empdata" border="2" width="75%" cellpadding="10" cellspacing="0">
+      <tr>
+        <th>Employee NameEmployee No.</th>
+        <th>Employee No.</th>
+        <th>Job</th>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+
+    var  namesArray =   [
+            {"Name":"Alfreds Futterkiste","EmpNo":"1","Job":"Manager"},
+            {"Name":"Ana Trujillo Emparedados","EmpNo":"2","Job":"Analyst"},
+            {"Name":"Antonio Moreno Taquería","EmpNo":"3","Job":"Analyst"},
+            {"Name":"Around the Horn","EmpNo":"4","Job":"Consultant"},
+            {"Name":"B's Beverages","EmpNo":"5","Job":"Consultant"},
+            {"Name":"Berglunds snabbköp","EmpNo":"6","Job":"Manager"},
+            {"Name":"Blauer Delikatessen","EmpNo":"7","Job":"Manager"},
+            {"Name":"Blondel père et fils","EmpNo":"8","Job":"Developer"},
+            {"Name":"Bólido Comidas","EmpNo":"9","Job":"Developer"},
+            {"Name":"Bon app'","EmpNo":"10","Job":"Developer"},
+            {"Name":"Dollar Marketse","EmpNo":"11","Job":"Manager"},
+            {"Name":"Cactus Comidas para llevar","EmpNo":"12","Job":"Analyst"},
+            {"Name":"Centro comercial Moctezuma","EmpNo":"13","Job":"Analyst"},
+            {"Name":"Chop-suey Chinese","EmpNo":"14","Job":"Developer"},
+            {"Name":"Comércio Mineiro","EmpNo":"15","Job":"Consultant"}
+			];
+
+    function fn_findData(){
+
+      var empData = document.getElementById("empData");
+      var tableObj = document.getElementById("empdata");
+
+      switch (event.target.value){
+          case "Find By Number":
+            
+            for(var i = 1; i<tableObj.rows.length; i++){
+              tableObj.deleteRow(i);
+            }
+
+            var resultArr = namesArray.find(item => item.EmpNo == empData.value);
+            var row = tableObj.insertRow(-1);
+      
+            var cell1 = row.insertCell(0);
+			      var cell2 = row.insertCell(1);
+			      var cell3 = row.insertCell(2);
+
+			      cell1.innerHTML = resultArr.Name;
+			      cell2.innerHTML = resultArr.EmpNo;
+			      cell3.innerHTML = resultArr.Job;
+            break;  
+          
+          case "Find By Job":
+
+            for(var i = 1; i<tableObj.rows.length; i++){
+              tableObj.deleteRow(i);
+            }  
+
+            var resultArr = namesArray.filter(item => item.Job == empData.value);
+
+            for(let i in resultArr){
+            var row = tableObj.insertRow(-1);
+      
+            var cell1 = row.insertCell(0);
+			      var cell2 = row.insertCell(1);
+			      var cell3 = row.insertCell(2);
+
+			      cell1.innerHTML = resultArr[i].Name;
+			      cell2.innerHTML = resultArr[i].EmpNo;
+			      cell3.innerHTML = resultArr[i].Job;
+            }
+            break;
+      }
+
+      empData.value="";
+    }
+
+  </script>
+
+</body>
+</html>

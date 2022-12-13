@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Demo</title>
+</head>
+<body>
+  <h1>Employee Data</h1>
+  <hr>
+
+  <br><br>
+  <input type="button" value="Get Data" onclick="fn_showData()">
+  <br><br>
+  <p id="empData"></p>
+
+  <script>
+    var paraObj = document.getElementById("empData");
+
+    class Employee{
+      constructor(empNo, empName, empJob){
+        this.number = empNo;
+        this.name = empName;
+        this.job = empJob;
+      }
+
+      showDetails(){
+        paraObj.innerHTML += `Employee Name = ${this.name},  Employee No.= ${this.number},      Job = ${this.job} <br><br>`;
+      }
+    }
+
+    function fn_showData(){
+      var empObj1 = new Employee(1, "Ankeet", "Analyst");
+      empObj1.showDetails();
+
+      var empObj2 = new Employee(2, "Shravan", "Consultant");
+      empObj2.showDetails();
+    }
+  </script>
+</body>
+</html>
