@@ -1,0 +1,58 @@
+<html>
+<head>
+  <style>
+    td, th{
+      padding: 10px;
+    }
+  </style>
+</head>
+<body align="center">
+<h3>Asynchronous Programming in  JavaScript</h3>
+	<hr/> 
+	
+	<button  onclick="fn_getData()">Get Data </button>
+	<br/><br/>
+	<table align="center" id="table1" border="2px" cellspacing="0px">
+		<tr>
+			<th>Id</th>
+			<th>Email</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Avatar</th>
+		</tr>
+	</table>
+	 
+	 
+	<script>	 
+	
+		var tableObj = document.getElementById("table1");
+		
+		
+	function fn_getData()
+	{ 
+		let url = "https://reqres.in/api/users";
+		
+		fetch(url).then(  (response)  => 
+		{
+			response.json().then(  (resData)  =>  
+			{ 
+					displayData(resData.data);
+			});
+		}).catch((error) => 
+		{				
+			tableObj.innerHTML  =  "<tr><td>" + error + "</td><td>" + error +"</td><td>" + error + "</td><td>" + error +"</td><td>" + error +"</td></tr>";
+		});
+	}  
+	
+	
+	function  displayData( dataArray )
+	{
+					for(let item of dataArray)
+					{
+						tableObj.innerHTML  +=  "<tr><td>" + item.id + "</td><td>" +  item.email + "</td><td>" + item.first_name + "</td><td>" + item.last_name +"</td><td><img src='" + item.avatar +"' width='100px' height='100px'/></td></tr>";
+					} 
+	}
+	
+	</script>	 
+</body>
+</html>
