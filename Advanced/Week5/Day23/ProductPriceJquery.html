@@ -1,0 +1,44 @@
+<html>
+	<head>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+  </head>
+	<body>
+		<h3>Amzaon Cart </h3>
+		<hr/>
+   
+    <br>
+    Product Name : <input type="text" id="t1" />
+    <br/><br/>
+    
+    Unit Price : <input type="number" id="t2" />
+    <br/><br/>
+    
+    Quantity : <input type="number" id="t3" />
+    <br/><br/>
+    
+    <input type="button" id="btn" value="Get Total" />
+    <p  id="p1"></p>
+
+		<script>		
+
+      $(document).ready(function(){
+
+        $("#btn").click(function(){
+          let x = $("#t2").val();
+          let y = $("#t3").val();
+          let result = parseInt(x) * parseInt(y);
+
+          if(parseInt(y)<=10){
+            $("#p1").text("Total Price: " + result);
+          }
+          else{
+            result = 0.9 * result;
+            $("#p1").text("Total Price: " + result);
+          }
+        });
+      });
+
+		</script>
+		 
+	</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+  <style>
+
+    span, h3{
+      color: white;
+    }
+
+    #startbtn{
+      color: white;
+      background-color: green;
+    }
+
+    #stopbtn{
+      color: white;
+      background-color: red;
+    }
+
+    div{
+      padding: 20px;
+      background-color: black;
+      text-align: center;
+      width: 25%;
+      height: 50%;
+      margin-left: 37%;
+      margin-top: 17%;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <span id="hours">00</span>
+    <span>:</span>
+    <span id = "minutes">00</span>
+    <span>:</span>
+    <span id = "seconds">00</span>
+    <br><br>
+
+    <input type="button" id="startbtn" value="Start">
+    <input type="button" id="stopbtn" value="Stop">
+
+    <br>
+    <h3>Jquery Timer</h3>
+  </div>
+
+  <script>
+
+    $(document).ready(function(){
+
+      var minutes = 0;
+      var seconds = 0;
+      var hours = 0;
+        
+      var interval;
+
+      $("#startbtn").click(function(){
+        interval = setInterval(function() {
+          seconds += 1;
+          if(seconds == 60){
+              minutes += 1;
+              seconds = 0;
+          }
+          if(minutes == 60){
+              hours += 1;
+              minutes = 0;
+          }
+
+          $('#minutes').text(getIntInString(minutes));
+          $('#seconds').text(getIntInString(seconds));
+          $('#hours').text(getIntInString(hours));     
+          },1000);
+      });
+
+      $("#stopbtn").click(function(){
+        clearInterval(interval);
+
+        //Resetting counts
+        hours = 0;
+        seconds = 0;
+        minutes = 0;
+        
+        // Resetting displays
+        $('#minutes').text(getIntInString(minutes));
+        $('#seconds').text(getIntInString(seconds));
+        $('#hours').text(getIntInString(hours));
+
+        checkStartClicked = false;
+      });
+
+      function getIntInString(number){
+            if(number/10 == 0){
+                return "00";
+            }
+            else if(number/10 < 1){
+                return "0" + number;
+            }
+            else{
+                return number;
+            }
+        }
+    });
+  </script>
+</body>
+</html>
