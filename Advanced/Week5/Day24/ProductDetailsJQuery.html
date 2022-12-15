@@ -1,0 +1,53 @@
+<!-- Create HTML Page to display Hello World message by using jQuery -->
+<html>
+ <head> 
+ </head>
+ <body>
+	<h3> jQuery Programming  - DOM Traversing</h3>
+	<hr />
+		
+	 <input id="t1" type="text" placeholder="product name" />
+	<input id="t2" type="text" placeholder="unit price " />
+	<input id="t3" type="text" placeholder="quantity" />
+
+  <input type="button" id="btn" value="Add Details">
+	<br></br> 
+
+ <table id="table1" border="2">
+	<tr>
+		<th>Product Name</th>
+		<th>Unit Price</th>
+		<th>Units In Stock</th>
+	</tr>
+	</table>  
+ 
+	
+	<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	
+	<script>
+	
+		$(document).ready(function()
+		{
+				
+			 $("#btn").click(function()
+			 {
+          var pname = $("#t1").val();
+          var price = $("#t2").val();
+          var qty = $("#t3").val();
+
+          var str = "<tr><td>" + pname + "</td><td>" + price + "</td><td>" + qty + "</td></tr>";
+
+         $("#table1").append(str);
+
+         $("#t1").val("")
+         $("#t2").val("")
+         $("#t3").val("")
+			 });
+		 
+		});
+				
+	</script>
+	
+ </body>
+</html>
+
