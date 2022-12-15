@@ -8,17 +8,52 @@
     <title>Random Numbers</title>
 </head>
 <body>
-    <h1 id="random" align="center" style="margin-top: 20%;">Number: </h1>
+    <h1 id="#num">Num</h1>
+    <img src="" width="50%" height="25%" id="ads">
 
     <script>
 
-        function randomNumber(number){
-            return Math.floor(Math.random() * number);
-        }
+        var random = 0;
 
         setInterval( () => {
-            $("#random").text("Number: " + randomNumber(999));
-        }, 1000)
+            random = Math.floor(Math.random() * 10) + 1;
+            $("h1").text("Number: " + random);
+
+            switch (random) { 
+	    case 1: 
+            $("#ads").attr("src","img/bistro.png");
+		    break;
+	    case 2: 
+            $("#ads").attr("src","img/brid.png");
+		    break;
+	    case 3: 
+            $("#ads").attr("src","img/burger-king.png");
+		    break;		
+	    case 4: 
+            $("#ads").attr("src","img/coca-cola.png");
+		    break;
+        case 5: 
+            $("#ads").attr("src","img/Godrej.png");
+		    break;
+        case 6: 
+            $("#ads").attr("src","img/google.png");
+		    break;
+        case 7: 
+            $("#ads").attr("src","img/mcd.png");
+		    break;
+        case 8: 
+            $("#ads").attr("src","img/netflix.png");
+		    break;
+        case 9: 
+            $("#ads").attr("src","img/studio.png");
+		    break;
+        case 10: 
+            $("#ads").attr("src","img/tide.png");
+		    break;
+        }
+    }, 1000)
+
+        
 
     </script>
 </body>
