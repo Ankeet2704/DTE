@@ -1,0 +1,4 @@
+1. What is eval() method in JavaScript? How to use it? Check with an example?
+Ans: The eval() method evaluates or executes an argument.
+     If the argument is an expression, eval() evaluates the expression. 
+     If the argument is one or more JavaScript statements, eval() executes the statements.
