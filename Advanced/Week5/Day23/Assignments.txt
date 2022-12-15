@@ -9,3 +9,27 @@ Ans: Select the p elements using "getElementsByTagName", then iterate over the r
      for(let item of collection){
         item.style.color = "blue";
      }
+     
+3. How to change text color of all paragraphs in the document using jquery?
+Ans: ${p}.css("color","blue"};
+
+4.  Create a web page to perform the following operations using jquery:	
+		a.  Get product details from user:		Product Name, Unit Price, Quantity
+		b.  Display total amount based on price and qty
+		c.   If the qty is greater than 10,  give 10% discount on total amount 
+
+5.  How to select all textboxes using jQuery selector?
+Ans: $("input[type = text]").val();
+
+
+6.  What is the difference between   "this" and  $(this) in jquery programming?
+Ans: this is the DOM object, whereas $(this) is the jQuery wrapper around same.
+     When using this, you can call DOM methods on it, but not jQuery methods. 
+     When using $(this), you can call jQuery methods on it, but not DOM methods.
+
+
+7. Create timer example using jQuery? (Refer the image)
+
+8.  Create a web page to generate ads at runtime. Loading images based on the time interval. Use random concept for this.
+
+	Hint :  Use javascript Math library to generate random numbers. 
