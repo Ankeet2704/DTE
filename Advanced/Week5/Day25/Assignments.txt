@@ -4,6 +4,7 @@ Ans: addClass() - Adds one or more classes to the selected elements
      toggleClass() - Toggles between adding/removing classes from the selected elements
      
 2.  How to apply effect based on width property?
-Ans: The Size effect can be used with effect() method. This resizes an element to a specified width and height.
-     selector.effect( "size", {arguments}, speed );
+Ans: The animate() method performs a custom animation of a set of CSS properties. 
+     Syntax: (selector).animate({styles},speed,easing,callback)
+
 
