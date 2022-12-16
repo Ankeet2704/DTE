@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery Designing</title>
+
+  <style>
+    .pdesign{
+      border: 2px solid blue;
+      border-radius: 10px;
+      text-align: justify;
+      padding: 10px;
+      font-size: 26px;
+    }
+
+    .boldtext{
+      font-weight: bold;
+    }
+
+    .italictext{
+      font-style: italic;
+    }
+
+    .underline{
+      text-decoration: underline;
+    }
+
+    .selected{
+      background-color:blue;
+      color:white;
+      border : 3px solid black;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 align="center">Applying Style Classes Using JQuery</h1>
+  <hr/>
+
+  <input type="button" class="hoverBtn" id="btnBold" value="B">
+  <input type="button" class="hoverBtn" id="btnUnderline" value="U">
+  <input type="button" class="hoverBtn" id="btnItalic" value="I">
+
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat voluptate, corrupti consequatur numquam quia hic, expedita velit asperiores minus vero, beatae ad! Voluptatem beatae laudantium tempore dignissimos itaque illo vero!
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur exercitationem velit impedit. Praesentium natus accusamus nesciunt aliquam obcaecati quos alias, iste quibusdam aliquid maiores qui? Velit recusandae laudantium adipisci! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iure natus reprehenderit obcaecati distinctio aperiam, quidem impedit dolor itaque tenetur harum at nihil. Reiciendis, consequuntur. Nisi, tempora. Dolor, quam architecto? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi ut nihil corporis recusandae eius laudantium quisquam impedit dolores deserunt doloribus? Temporibus, nemo facere quod esse tempora magni porro laboriosam cumque!
+  </p>
+
+  <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $("p").addClass("pdesign");
+
+      $("#btnBold").click(function(){
+        $("p").toggleClass("boldtext");
+        $(this).toggleClass("selected");
+      })
+
+      $("#btnItalic").click(function(){
+        $("p").toggleClass("italictext");
+        $(this).toggleClass("selected");
+      })
+
+      $("#btnUnderline").click(function(){
+        $("p").toggleClass("underline");
+        $(this).toggleClass("selected");
+      })
+
+    });
+  </script>
+</body>
+</html>
