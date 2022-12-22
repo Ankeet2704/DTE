@@ -1,0 +1,9 @@
+Q) What are pipes in Angular?
+A) Angular Pipes transform the output. They are mainly used to format the data before displaying it to the user. 
+   A pipe takes expression value as an input and transforms it into the desired output. Below is the list of inbuilt pipes in Angular:
+   Examples: Uppercase, Lowercase, titlecase, currency, date, slice, percent, decimal, Icon, i18nselect, i18nplural
+
+Q) What is Gitbash?
+A) Git Bash is an application for Microsoft Windows environments which provides an emulation layer for a Git command line experience. 
+   Bash is an acronym for Bourne Again Shell. A shell is a terminal application used to interface with an operating system through written commands. 
+   Bash is a popular default shell on Linux and macOS. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system.
