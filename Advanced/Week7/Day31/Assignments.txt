@@ -1,0 +1,18 @@
+1. What are the advantages of typescript over javascript?
+Ans: TypeScript is better than JavaScript in terms of language features, reference validation, project scalability, 
+     collaboration within and between teams, developer experience, and code maintainability.
+        
+2. How to use *ngIf in Angular?
+Ans: A shorthand form of the directive, *ngIf="condition", is generally used, provided as an attribute of the anchor element for the inserted template.
+     Angular expands this into a more explicit version, in which the anchor element is contained in an <ng-template> element.       
+     Ex:  <div *ngIf="condition">Content to render when condition is true.</div>
+
+        
+3. How to hide a html element using Angular ?
+Ans: The ng-hide directive hides the HTML element if the expression evaluates to true.
+        ng-hide is also a predefined CSS class in AngularJS, and sets the element's display to none.
+        Ex:  Hide HTML: <input type="checkbox" ng-model="myVar">
+            <div ng-hide="myVar">
+            <h1>Welcome</h1>
+            <p>Welcome to my home.</p>
+            </div>
