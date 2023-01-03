@@ -37,3 +37,6 @@ Ans: An interface defines the syntax that any entity must adhere to.
         lastName:"Hanks", 
         sayHi: ():string =>{return "Hi there"} 
      }
+     
+8.  What is default export in TypeScript?
+Ans: Default exports are marked with the keyword default and there can only be one default export per module.
